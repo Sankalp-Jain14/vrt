@@ -55,8 +55,8 @@ async function testCreateOrg(){
         const orgTitleInput = await driver.findElement(By.id('orgtitle'));
         await orgTitleInput.sendKeys('New Organization Name' , Key.RETURN);
 
-        const CreateOrgRefrenceScreenshot = await driver.takeScreenshot();
-        fs.writeFileSync('./refrenceImage/CreateOrgRefrenceScreenshot.png' , CreateOrgRefrenceScreenshot , 'base64');
+        // const CreateOrgRefrenceScreenshot = await driver.takeScreenshot();
+        // fs.writeFileSync('./refrenceImage/CreateOrgRefrenceScreenshot.png' , CreateOrgRefrenceScreenshot , 'base64');
         const CreateOrgTestScreenshot = await driver.takeScreenshot();
         fs.writeFileSync('./specs/CreateOrgTestScreenshot.png' , CreateOrgTestScreenshot   , 'base64');
         

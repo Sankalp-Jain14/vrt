@@ -73,8 +73,8 @@ async function testCreateProject(){
         //verify by checking text of h2 with id long-button
 
 
-        const CreateProjectRefrenceScreenshot = await driver.takeScreenshot();
-        fs.writeFileSync('./refrenceImage/CreateProjectRefrenceScreenshot.png' , CreateProjectRefrenceScreenshot , 'base64');
+        // const CreateProjectRefrenceScreenshot = await driver.takeScreenshot();
+        // fs.writeFileSync('./refrenceImage/CreateProjectRefrenceScreenshot.png' , CreateProjectRefrenceScreenshot , 'base64');
         const CreateProjectTestScreenshot = await driver.takeScreenshot();
         fs.writeFileSync('./specs/CreateProjectTestScreenshot.png' , CreateProjectTestScreenshot   , 'base64');
         
